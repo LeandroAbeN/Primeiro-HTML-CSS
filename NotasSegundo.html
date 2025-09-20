@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas do Segundo Semestre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: "Dosis-Medium";
+            src: url("Dosis-Medium.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Dosis-Regular";
+            src: url("Dosis-regular.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            letter-spacing: 2px;
+            font-family: "Dosis-Medium";
+			margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: "Dosis-regular";
+			src: url("Dosis-regular.woff2") format("woff2");
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+        }
+
+		h4 {
+            font-family: "Dosis-regular";
+			src: url("Dosis-regular.woff2") format("woff2");
+			font-style: normal;
+			font-weight: normal;
+			font-size: 26px;			
+            margin-bottom: 20px;
+        }
+		
+        .btn-danger {
+            margin-left: 8px;
+        }
+		
+		h6 {
+			font-family: "Dosis-regular";
+			src: url("Dosis-regular.woff2") format("woff2");
+			margin-top: 50px;
+		}
+			
+    </style>
+</head>
+<body class="container">
+    <div class="row">
+        <h1>Minhas Notas</h1>
+    </div>
+    <div class="card-deck">
+        <div class="card border-success mb-5" style="max-width: 18rem;">
+            <img class="card-img-top" src="um computador dentro de uma nuvem, não tão colorida.png" alt="Computação em Nuvem">
+            <div class="card-body">
+                <h5 class="card-title">Computação em Nuvem<br></br></h5>
+                <p class="card-text">Nota Final: 10</p>
+            </div>
+        </div>
+        <div class="card border-success mb-5" style="max-width: 18rem;">
+            <img class="card-img-top" src="banco de dados.jpg" alt="Banco de Dados NoSQL">
+            <div class="card-body">
+                <h5 class="card-title">Banco de Dados NoSQL<br></br></h5>
+                <p class="card-text">Nota Final: 10</p>
+            </div>
+        </div>
+        <div class="card border-success mb-5" style="max-width: 18rem;">
+            <img class="card-img-top" src="inteligência artificial com uma referência engraçada.png" alt="Inteligência Artificial">
+            <div class="card-body">
+                <h5 class="card-title">Inteligência Artificial para Devs</h5>
+                <p class="card-text">Nota Final: 10</p>
+            </div>
+        </div>
+        <div class="card border-success mb-5" style="max-width: 18rem;">
+            <img class="card-img-top" src="pc comunicação.jpg" alt="Comunicação entre Aplicações">
+            <div class="card-body">
+                <h5 class="card-title">Comunicação entre Aplicações<br></br></h5>
+                <p class="card-text">Nota Final: 7,9</p>
+            </div>
+        </div>
+        <div class="card border-success mb-5" style="max-width: 18rem;">
+            <img class="card-img-top" src="um desenho engraçado sobre programação (4).png" alt="Desenvolvimento Web">
+            <div class="card-body">
+                <h5 class="card-title">Desenv. Web em HTML5, CSS, Javascript e PHP</h5>
+                <p class="card-text">Nota Final: 10</p>
+            </div>
+        </div>
+    </div>
+    <h4>Se todas as notas estiverem acima da média, clique no botão verde. Caso contrário, clique no botão vermelho.</h4>
+    <button type="button" class="btn btn-success" onclick="openImage('computers conversing in a colorful setting.png', 'Sucesso!')">Sucesso :)</button>
+	<button type="button" class="btn btn-danger" onclick="openImage('bomba.jpg', 'Perigo!')">Perigo!!!</button>	
+	<h6>Site desenvolvido por Leandro Abe Nogueira.</h6>
+	<script>
+		function openImage(imageUrl) {
+			
+			// Abre a imagem em uma nova janela
+			window.open(imageUrl, '_blank', 'width=500,height=500,top=100,left=100');
+
+		}
+	</script>
+</body>
+</html>
